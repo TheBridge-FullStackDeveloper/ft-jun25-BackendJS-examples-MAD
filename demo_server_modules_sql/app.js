@@ -7,6 +7,10 @@ const port = 3000;
 // Leer fichero .env
 require('dotenv').config();
 
+// Configuración del logger con Morgan
+const morgan = require('./middlewares/morgan');
+app.use(morgan(':method :url :status :param[id] - :response-time ms :body'));
+
 // Rutas
 const booksRoutes = require("./routes/books.routes");
 const productsRoutes = require("./routes/products.routes");

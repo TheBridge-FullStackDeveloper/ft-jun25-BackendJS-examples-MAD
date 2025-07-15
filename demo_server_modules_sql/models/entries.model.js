@@ -77,9 +77,8 @@ module.exports = entries;
 
 // Pruebas
 
-getEntriesByEmail("birja@thebridgeschool.es")
-    .then(data=>console.log(data))
-
+/* getEntriesByEmail("birja@thebridgeschool.es")
+    .then(data=>console.log(data)) */
 
 
 /* getAllEntries()
